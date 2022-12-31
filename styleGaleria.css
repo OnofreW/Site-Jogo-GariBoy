@@ -1,0 +1,300 @@
+
+*{box-sizing: border-box; -webkit-box-sizing: border-box; }
+/*html, body { height: 100%; }
+body { margin: 0; font: 16px/1.3 sans-serif; }*/
+body {
+	color: #97b15e;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin: 0 0 0 0;
+	padding: 0px;
+	background-color: whitesmoke;
+}
+
+
+/*
+PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
+http://stackoverflow.com/a/34696029/383904
+*/
+
+.CSSgal {
+  position: relative;
+  overflow: hidden;
+  height: 100%; /* Or set a fixed height */
+}
+
+/* SLIDER */
+
+.CSSgal .slider {
+  height: 100%;
+  white-space: nowrap;
+  font-size: 0;
+  transition: 0.8s;
+}
+
+/* SLIDES */
+
+.CSSgal .slider > * {
+  font-size: 1rem;
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top;
+  height: 100%;
+  width: 100%;
+  background: none 50% no-repeat;
+  background-size: cover;
+}
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.CSSgal .prevNext {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 100%;
+  height: 0;
+}
+
+.CSSgal .prevNext > div+div {
+  visibility: hidden; /* Hide all but first P/N container */
+}
+
+.CSSgal .prevNext a {
+  background: black;
+  position: absolute;
+  width:       60px;
+  height:      60px;
+  line-height: 60px; /* If you want to place numbers */
+  text-align: center;
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+}
+.CSSgal .prevNext a:hover {
+  opacity: 1;
+}
+.CSSgal .prevNext a+a {
+  left: auto;
+  right: 0;
+}
+
+/* NAVIGATION */
+
+.CSSgal .bullets {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+.CSSgal .bullets > a {
+  display: inline-block;
+  width:       30px;
+  height:      30px;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+  background: rgba(255, 255, 255, 1);
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+}
+.CSSgal .bullets > a+a {
+  background: rgba(255, 255, 255, 0.5); /* Dim all but first */
+}
+.CSSgal .bullets > a:hover {
+  background: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* NAVIGATION BUTTONS */
+/* ALL: */
+.CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
+/* ACTIVE */
+#s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
+#s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
+#s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
+#s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+#s5:target ~ .bullets >*:nth-child(5) {background: rgba(255, 255, 255,   1);}
+/* More slides? Add here more rules */
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+/* ACTIVE: */
+#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+#s5:target ~ .prevNext >*:nth-child(5) {visibility: visible;}
+/* More slides? Add here more rules */
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+#s5:target ~ .slider {transform: translateX(-400%); -webkit-transform: translateX(-400%);}
+/* More slides? Add here more rules */
+
+
+/* YOU'RE THE DESIGNER! 
+   ____________________
+   All above was mainly to get it working :)
+   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+
+/* .CSSgal es el color del identificador de cada slide */
+
+.CSSgal{
+  color: black;  
+  text-align: center;
+}
+.CSSgal .slider h2 {
+  margin-top: 40vh;
+  font-weight: 200;
+  letter-spacing: -0.06em;
+  word-spacing: 0.2em;
+  font-size: 3em;
+}
+.CSSgal a {
+  border-radius: 50%;
+  margin: 0 3px;
+  color: rgba(0,0,0,0.8);
+  text-decoration: none;
+}
+#cantoEsquerdo {
+	top: 400px;
+	position: absolute;
+	margin: auto 0;
+}
+button{
+	position: absolute;
+	margin: 400;
+}
+#cantoDireito{
+	top: 400px;
+	position: absolute;
+	margin: 400;
+	text-align: right;
+
+}
+:root {
+    --cor0: rgb(244,97,11);
+    --cor1: rgb(252,228,8);
+    --cor2: rgb(5, 230, 53);
+    --cor3: rgb(47, 168, 102);
+    --cor4: rgb(26, 92, 55);
+    --cor5: rgb(6, 61, 30);
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+.clear{clear:both;}
+* {margin: 0px;padding: 0px;}
+main {
+	margin: 0 auto;
+	text-align: left;
+	width: 767px;
+}
+a{color:var(--cor1);}
+a:hover{color:var(--cor0);}
+/********************** Header ***************************/
+header {
+	background-image:url(images/capaSite.jpg);
+	width: 767px;
+	height:404px;
+	position:relative;
+	margin: 0 auto;
+	text-align: left;
+	width: 767px;
+}
+header ul{
+	position:relative;
+	top:20px;
+	left:100px;
+}
+header li{
+	display:block;
+	float:left;
+	width:97px;	
+}
+header ul a{
+	color:#aefa0d;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 900;
+	text-transform: capitalize;
+}
+header ul a:hover{color:#97b15e;}
+
+
+/********************** Welcome ***************************/
+#welcome {
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+#welcome h2{
+	margin: 10px 10px 10px 110px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	color: #7eae19;}
+#welcome p{
+margin: 10px 10px 10px 110px;width:416px;}
+#welcome a{}
+
+/********************** News ***************************/
+#news {
+	background-image:url(images/line.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding: 10px 10px 10px 110px;
+}
+#news h3{
+	margin: 20px 10px 15px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	color: #7eae19;
+}
+.newsitem{float:left;width:275px;
+display:inline;}
+.newsitem a{}
+.newsitem img{float:left;margin-right:10px;}
+.newsitem span{
+	color:#97b15e;
+	font-size: 9px;
+	font-weight: 900;
+}
+.newsitem p{margin: 10px 10px 15px 10px;}
+/********************** Best DJ's ***************************/
+#dj {
+	background-image:url(images/line.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding: 30px 0px 0px 110px;
+}
+#dj img{border:0px;}
+#dj a{border:0px;float:left;}
+#dj a:hover{}
+/********************** Footer ***************************/
+footer {
+	background-image:url(images/line.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 767px;
+	margin: 0 auto;
+
+}
+
+footer > p{
+	padding: 15px 15px 15px 110px;
+	text-align:center;
+}
