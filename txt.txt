@@ -1,0 +1,22 @@
+Apresentamos "Gari-Boy contra o Monstro do Lixo"; um jogo criado pelos formandos do curso 
+"Além de Jogar, Eu faço jogos" do , que visa a conscientização e a importância da preservação
+ do meio-ambiente ao público infantil, de todas as idades.
+
+- Sobre o jogo
+
+Desenvolvido em Lua como um jogo para dispositivos Android, Gari-Boy contra o Monstro do Lixo
+ é um jogo de ação de plataforma em 2-D, simples e fácil de manusear, onde o usuário 
+percorre os níveis e deve recolher os sacos de lixo com os resíduos mais comuns presentes nas 
+nossas cidades (plásticos, vidros, orgânicos e outros), antes que o Monstro do Lixo misture tudo
+ e suje toda a cidade!
+
+No jogo, o Gari-Boy atravessa os níveis, buscando recolher o maior número de materiais 
+recicláveis classificados com as cores de cada tipo, antes que o Monstro do Lixo bagunce
+ tudo e estrague o trabalho!
+
+- Objetivos
+
+A proposta é simples: auxiliar pais, responsáveis e educadores a proporcionar às crianças os 
+primeiros contatos com temas como preservação ambiental e Desenvolvimento Sustentável, 
+em conformidada com os Objetivos do Desenvolvimento Sustentável,
+de acordo com os ODS: 1, 6, 7, 8, 10, 11,12, 13, 14 e 15.
